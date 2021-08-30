@@ -33,7 +33,6 @@ import java.util.ResourceBundle;
 
 public class AddFromViewController implements Initializable , Serializable {
 
-
     @FXML  public Pane rootPane;
     @FXML  public AnchorPane eduAnchorPane;
     @FXML  public Button addEduButton;
