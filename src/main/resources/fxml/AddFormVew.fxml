@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="rootPane" prefHeight="678.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.AddFromViewController">
+
+   <children>
+      <Button layoutX="495.0" layoutY="625.0" mnemonicParsing="false" onMouseClicked="#onClickSaveButton" prefHeight="28.0" prefWidth="74.0" text="SAVE" />
+      <Button layoutX="590.0" layoutY="625.0" mnemonicParsing="false" onMouseClicked="#onClickCancelButton" prefHeight="28.0" prefWidth="74.0" text="CANCEL" />
+      <Button layoutX="395.0" layoutY="625.0" mnemonicParsing="false" onMouseClicked="#onClickPrepareButton" prefHeight="28.0" prefWidth="80.0" text="Prepare CV" />
+      <ScrollPane fitToWidth="true" layoutX="14.0" layoutY="187.0" prefHeight="204.0" prefWidth="667.0">
+        <content>
+          <AnchorPane fx:id="eduAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="194.0" prefWidth="665.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="14.0" prefHeight="35.0" prefWidth="152.0" text="Education">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addEduButton" layoutX="20.0" layoutY="65.0" mnemonicParsing="false" onMouseClicked="#onClickAddEduButton" prefHeight="25.0" prefWidth="30.0" text="+" />
+                  <Line endX="500.0" layoutX="115.0" layoutY="98.0" startX="-100.0" />
+                  <Label layoutX="102.0" layoutY="69.0" prefHeight="20.0" prefWidth="80.0" text="Name" />
+                  <Label layoutX="271.0" layoutY="69.0" prefHeight="20.0" prefWidth="62.0" text="Date" />
+                  <Label layoutX="405.0" layoutY="69.0" prefHeight="20.0" prefWidth="86.0" text="Certificate" />
+                  <Label layoutX="530.0" layoutY="68.0" prefHeight="20.0" prefWidth="121.0" text="Certificate  ID" />
+                  <VBox fx:id="eduvBOX" layoutX="8.0" layoutY="99.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="200.0" prefWidth="650.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fitToWidth="true" layoutX="14.0" layoutY="407.0" prefHeight="204.0" prefWidth="667.0">
+         <content>
+            <AnchorPane fx:id="workAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="194.0" prefWidth="665.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="14.0" prefHeight="35.0" prefWidth="202.0" text="Work experience">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addWorkButton" layoutX="20.0" layoutY="65.0" mnemonicParsing="false" onMouseClicked="#onClickAddWorkButton" prefHeight="25.0" prefWidth="30.0" text="+" />
+                  <Line endX="500.0" layoutX="115.0" layoutY="98.0" startX="-100.0" />
+                  <Label layoutX="102.0" layoutY="69.0" prefHeight="20.0" prefWidth="80.0" text="Name" />
+                  <Label layoutX="271.0" layoutY="69.0" prefHeight="20.0" prefWidth="62.0" text="Date FROM" />
+                  <Label layoutX="462.0" layoutY="69.0" prefHeight="20.0" prefWidth="86.0" text="Date TO" />
+                  <VBox fx:id="workExpvBOX" layoutX="8.0" layoutY="99.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="200.0" prefWidth="650.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="45.0" layoutY="14.0" prefHeight="35.0" prefWidth="152.0" text="Main Data">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fName" layoutX="148.0" layoutY="56.0" />
+      <TextField fx:id="lName" layoutX="148.0" layoutY="88.0" />
+      <Label layoutX="45.0" layoutY="60.0" prefHeight="17.0" prefWidth="86.0" text="First Name" />
+      <Label layoutX="45.0" layoutY="88.0" prefHeight="17.0" prefWidth="93.0" text="Last Name" />
+      <Label layoutX="48.0" layoutY="124.0" prefHeight="17.0" prefWidth="86.0" text="Department" />
+      <Label layoutX="48.0" layoutY="159.0" prefHeight="17.0" prefWidth="93.0" text="Position" />
+      <MenuButton fx:id="selectDep" layoutX="148.0" layoutY="120.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Select" />
+      <MenuButton fx:id="selectPos" layoutX="148.0" layoutY="155.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Select" />
+   </children>
+</Pane>

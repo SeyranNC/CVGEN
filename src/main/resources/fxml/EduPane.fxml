@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.EduPaneController">
+    <children>
+        <Button layoutX="14.0" layoutY="4.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" text="-"
+                onMouseClicked="#OnClickEduDeleteButton">
+        </Button>
+        <TextField layoutX="52.0" layoutY="3.0" />
+        <DatePicker layoutX="223.0" layoutY="3.0" prefHeight="25.0" prefWidth="119.0" />
+        <CheckBox layoutX="384.0" layoutY="2.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="113.0" text="CheckBox"
+                  onMouseClicked="#onClickChekBoxCert">
+        </CheckBox>
+        <TextField disable="true" layoutX="497.0" layoutY="4.0" prefHeight="25.0" prefWidth="129.0" />
+    </children>
+</Pane>
